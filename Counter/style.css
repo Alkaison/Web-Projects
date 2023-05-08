@@ -1,0 +1,89 @@
+:root {
+    --text-color: #64FFDA;
+    --background-color: #0A192F;
+    --sub-text: #DDDDDD;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color);
+}
+.counter-card {
+    padding: 32px;
+    height: 400px;
+    width: 400px;
+    transition: all 0.4s linear;
+}
+.counter-heading {
+    color: var(--text-color);
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-bottom: 2px solid var(--text-color);
+    padding-bottom: 8px;
+    border-radius: 16px;
+}
+#counter-text {
+    min-height: 75px;
+    margin: 32px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-plus, .btn-minus, .btn-reset {
+    padding: 12px;
+    margin: 16px;
+    width: 200px;
+    height: 50px;
+    line-height: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 2px solid var(--text-color);
+    background-color: var(--background-color);
+    color: var(--sub-text);
+    cursor: pointer;
+}
+.btn-plus:hover, .btn-minus:hover, .btn-reset:hover {
+    box-shadow: 2px 2px 4px var(--sub-text);
+}
+
+/* Responsive */
+@media screen and (max-width: 420px) {
+    .counter-card {
+        padding: 16;
+        width: 300px;
+        height: 400px;
+    }
+    .counter-heading {
+       font-size: 24px;
+    }
+    #counter-text {
+        font-size: 24px;
+    }
+    .btn-plus, .btn-minus, .btn-reset {
+        width: 75px;
+        font-size: 12px;
+        margin: 8px;
+        padding: 8px;
+    }
+}
