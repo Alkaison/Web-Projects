@@ -95,9 +95,9 @@ html {
 }
 .hrLine {
     border: none;
-    height: 2px;
-    background-color: #fff;
-    background-image: linear-gradient(to right, #fff, #ccc, #fff);
+    height: 1px;
+    background-color: #000;
+    /* background-image: linear-gradient(to right, #fff, #ccc, #fff); */
 }
 
 /* NavBar CSS Responsive */
@@ -115,5 +115,40 @@ html {
     }
     #searchProjects {
         width: 75%;
+    }
+}
+
+/* Body CSS */
+.body {
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+/* Footer CSS */
+.ft-container {
+    padding: 0 256px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.ft-text {
+    font-size: 14px;
+}
+.ft-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* Footer Responsive CSS */
+@media screen and (max-width: 1000px) {
+    .ft-container {
+        display: block;
+        text-align: center;
+        height: auto;
+        padding: 0;
     }
 }
