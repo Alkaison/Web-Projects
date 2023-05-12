@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color:cadetblue;
+    border-radius: 20px;
+    padding: 16px;
+}
+#title {
+    text-align: center;
+    font-family: cursive;
+    padding: 4px 8px;
+    margin-bottom: 16px;
+    color: purple;
+    font-weight: bold;
+}
+.containerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+.textTitle {
+    padding: 2px 4px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 4px;
+    color: black;
+}
+.inputField {
+    width: 100%;
+    padding: 4px 8px;
+    margin: 8px 0;
+    border: 2px solid gray;
+    border-radius: 12px;
+    outline: 0;
+    height: 40px;
+    color: black;
+    background-color: rgb(211, 194, 194);
+}
+.calculateBtn1 {
+    text-align: center;
+    outline: 0;
+    border: 0;
+    width: 80%;
+    height: 32px;
+    border-radius: 4px 16px 16px 4px;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 2px 4px;
+}
+.calculateBtn1:hover, .calculateBtn2:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
+.calculateBtn2 {
+    text-align: center;
+    outline: 0;
+    border: 0;
+    width: 80%;
+    height: 32px;
+    border-radius: 16px 4px 4px 16px;
+    cursor: pointer;
+    float: right;
+    padding: 2px 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 480px) {
+    .calculateBtn1, .calculateBtn2 {
+        width: 90%;
+        margin: 0 4px;
+        padding: 2px 4px;
+        font-size: 10px;
+    }
+    #title {
+        margin-bottom: 6px;
+        font-size: 20px;
+    }
+    .textTitle {
+        font-size: 10px;
+    }
+}
