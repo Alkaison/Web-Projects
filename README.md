@@ -10,6 +10,8 @@ It contains many JavaScript projects that were created alongside with HTML and C
 | 2. | Expanding Cards | [Link](Expanding%20Cards/index.html "Expanding Cards") |
 | 3. | Accoridan | [Link](Accoridan/index.html "Accoridan") |
 | 4. | Number Guessing Game | [Link](Number%20Guessing%20Game/index.html "Number Guessing Game") |
+| 5. | Temperature Converter | [Link](Temperature%20Converter/index.html "Temperature Converter") |
+| 6. | Hidden Search Widget | [Link](Hidden%20Search%20Widget/index.html "Hidden Search Widget") |
 
 ## Support
 
