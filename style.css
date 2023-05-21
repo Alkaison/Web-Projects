@@ -16,7 +16,7 @@ html {
 /* NavBar CSS */
 .navContainer {
     height: 10vh;
-    padding: 0 256px;
+    padding: 0 128px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,7 @@ html {
 }
 #nameTitle {
     font-size: 20px;
+    cursor: pointer;
 }
 .navSearch {
     display: flex;
@@ -66,7 +67,7 @@ html {
     background-position: 8px center;
     background-repeat: no-repeat;
     padding-left: 48px;
-    transition: all 0.3s;
+    transition: box-shadow 0.4s;
 }
 #searchProjects:focus {
     border-color: black;
@@ -83,7 +84,7 @@ html {
     border: 1px solid black;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.14s ease-out;
+    transition: transform 0.14s ease-out, box-shadow 0.14s ease-out;
 }
 #twitterBtn:hover {
     box-shadow: #000 1px 1px, #000 2px 2px, #000 3px 3px, #000 4px 4px;
@@ -119,18 +120,76 @@ html {
 }
 
 /* Body CSS */
-.body {
-    height: 100vh;
-    text-align: center;
+.mainBodyContainer {
+    padding: 16px 0;
+    margin: 16px 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: gray;
+    gap: 0 32px;
+    position: relative;
+}
+/* left side container */
+.bodyleftconatiner {
+    width: 28%;
+    margin-left: 128px;
+    padding: 8px 0;
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.bodyleftconatiner h3 {
+    padding-left: 8px;
+    letter-spacing: 0.8px;
+    border-bottom: 1px solid black;
+}
+.difficultyConatiner {
+    padding-left: 8px;
+}
+
+.bodyrightcontainer {
+    width: 100%;
+    margin-right: 128px;
+}
+.projects-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 36px;
+}
+.project-card {
+    width: 300px;
+    padding: 4px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.project-card a {
+    text-decoration: none;
+    color: black;
+}
+.project-image {
+    width: 280px;
+    height: 300px;
+    overflow: hidden;
+    padding: 8px;
+}
+.project-title {
+    padding-left: 12px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.tags {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+@media screen and (max-width: 1500px) {
+    .projects-container {
+        grid-template-columns: auto auto;
+    }
 }
 
 /* Footer CSS */
 .ft-container {
-    padding: 0 256px;
+    padding: 0 128px;
     height: 64px;
     display: flex;
     align-items: center;
