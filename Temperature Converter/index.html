@@ -8,8 +8,6 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="./style.css">
-    <!-- JavaScript -->
-    <script src="./script.js" defer></script>
 </head>
 <body>
 
@@ -18,17 +16,19 @@
         <div class="containerBox">
             <div class="celius-container">
                 <h3 class="textTitle">Enter in celsius:</h3>
-                <input type="text" id="celsius" class="inputField" placeholder="32°C"> <br>
-                <button onclick="calculateFahrenheit()" class="calculateBtn1">To Fahrenheit » </button>
+                <input type="text" id="celsius" class="inputField" placeholder="24°C"> <br>
+                <button type="button" class="calculateBtn1">To Fahrenheit » </button>
             </div>
     
             <div class="fahrenheit-container">
                 <h3 class="textTitle">Enter in fahrenheit:</h3>
-                <input type="text" id="fahrenheit" class="inputField" placeholder="84°F"> <br>
-                <button onclick="calculateCelsius()" class="calculateBtn2"> « To Celsius</button>
+                <input type="text" id="fahrenheit" class="inputField" placeholder="60°F"> <br>
+                <button type="button" class="calculateBtn2"> « To Celsius</button>
             </div>
         </div>
     </div>
 
+    <!-- JavaScript -->
+    <script src="./script.js" defer></script>
 </body>
 </html>
