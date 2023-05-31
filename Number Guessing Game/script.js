@@ -1,25 +1,27 @@
+const resultText = document.querySelector("#result");
+const submitBtn = document.querySelector("#submitBtn");
+const refreshBtn = document.querySelector("#refreshBtn");
+
 // Generate random number 
 const guessingNumber = Math.floor((Math.random() * 10) + 1);
 let guessTimes = 0;
 
-// console.log("Random Number: " + guessingNumber);  // check the random number 
+// check the random number 
+// console.log("Random Number: " + guessingNumber);
 
 // Check the number guessed by User 
-function checkNum() 
-{
-    const resultText = document.getElementById("result");
-    const submitBtn = document.getElementById("submitBtn");
-    const refreshBtn = document.getElementById("refreshBtn");
-    let numInput = document.getElementById("num").value;
+submitBtn.addEventListener("click", () => {
 
-    numInput = Number.parseInt(numInput.trim());
+    let numInput = document.querySelector("#num").value;
+    numInput = Number.parseInt(numInput);
     guessTimes++;
 
+    // input validations 
     if (numInput === '' || isNaN(numInput) || typeof numInput === 'undefined' || !Number.isInteger(Number(numInput)) || numInput < 1 || numInput > 10)
         resultText.innerHTML = "Please enter a valid integer between 1 and 10.";
-    else 
+    else
     {
-        if(numInput == guessingNumber)
+        if(numInput === guessingNumber)
         {
             // change buttons 
             submitBtn.style.display = "none";
@@ -36,4 +38,7 @@ function checkNum()
         else
             resultText.innerHTML = `You guessed the wrong number: ${numInput}.`;
     }
-}
+});
+
+// refresh the page to generate new random number 
+refreshBtn.addEventListener("click", () => location.reload());
