@@ -1,26 +1,23 @@
-function plus() 
-{
-    const text = document.getElementById("counter-text");
-    let count = parseInt(document.getElementById("counter-text").innerText);
+const text = document.querySelector("#counter-text");
+const plusBtn = document.querySelector(".btn-plus");
+const minusBtn = document.querySelector(".btn-minus");
+const resetBtn = document.querySelector(".btn-reset");
+let count = parseInt(document.getElementById("counter-text").textContent);
 
+// increment the counter 
+plusBtn.addEventListener("click", () => {
     count++;
-    text.innerHTML = count;
-}
+    text.textContent = count;
+});
 
-function minus () 
-{
-    const text = document.getElementById("counter-text");
-    let count = parseInt(document.getElementById("counter-text").innerText);
-
+// decrement the counter 
+minusBtn.addEventListener("click", () => {
     count--;
-    text.innerHTML = count;
-}
+    text.textContent = count;
+});
 
-function reset()
-{
-    const text = document.getElementById("counter-text");
-    let count = parseInt(document.getElementById("counter-text").innerText);
-
+// reset to initial value 
+resetBtn.addEventListener("click", () => {
     count = 100;
-    text.innerHTML = count;
-}
+    text.textContent = count;
+});
