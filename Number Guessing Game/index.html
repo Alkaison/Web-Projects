@@ -8,7 +8,22 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="./style.css">
+    <!-- Hiding the buttons -->
+    <style>
+        /* Hide the number input spinner */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    
+        /* Optional styles to hide the number input arrow in Firefox */
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    </style>
 </head>
+
 <body>
 
     <div class="container">
