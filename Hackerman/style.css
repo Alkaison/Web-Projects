@@ -1,0 +1,100 @@
+/* Hacker Style Font - Inconsolata */
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    font-family: 'Inconsolata', monospace;
+    background-image: url('./bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    width: 80%;
+    height: 85%;
+    max-width: 80%;
+    max-height: 85%;
+    overflow-y: hidden;
+    border-radius: 10px;
+    opacity: 0.9;
+    color: white;
+    background-color: #222735;
+}
+
+.sticky-container {
+    position: sticky;
+    top: 0;
+    background-color: #222735;
+}
+
+.navbanner {
+    height: 45px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.logo {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 4px;
+}
+.title {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#username {
+    padding: 0 2px;
+    text-transform: lowercase;
+}
+.actionBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+.actionBtns svg {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+}
+
+.toolbanner {
+    padding: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+}
+.toolbanner > ul {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 12px;
+}
+.toolbanner > ul > li {
+    list-style-type: none;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.toolbanner > ul > li:hover {
+    color: rgb(37, 37, 248);
+}
+
+.terminal-text-wrap {
+    padding: 16px;
+    max-height: 90%;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
