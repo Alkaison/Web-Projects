@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <form name="passwordGen">
+            <fieldset>
+                <legend id="legend-title">Password Generator</legend>
+                <label id="password-title">New Password:</label> <br>
+
+                <div class="inputField">
+                    <input type="text" id="passwordInput" name="random Password" title="Random Password" placeholder="Random Password" disabled>
+
+                    <svg id="svgClipboard" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                        <path fill="white"
+                            d="M280 64h40c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128C0 92.7 28.7 64 64 64h40 9.6C121 27.5 153.3 0 192 0s71 27.5 78.4 64H280zM64 112c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320c8.8 0 16-7.2 16-16V128c0-8.8-7.2-16-16-16H304v24c0 13.3-10.7 24-24 24H192 104c-13.3 0-24-10.7-24-24V112H64zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z" />
+                    </svg> <br>
+                </div>
+                
+                <label id="length">Set Password Length: <span id="passLengthText">8</span></label> <br>
+                <input type="range" min="8" max="28" value="8" title="Password Length Selector" id="passLengthInput"> <br>
+    
+                <label id="paramters">Parameters:</label> <br>
+    
+                <input type="checkbox" id="uppercase" title="Allow uppercase character"> <label>Include uppercase letters</label> <br>
+                <input type="checkbox" id="lowercase" title="Allow lowercase character" checked> <label>Include lowercase letters</label> <br>
+                <input type="checkbox" id="numbers" title="Allow number" checked> <label>Include numbers</label> <br>
+                <input type="checkbox" id="symbols" title="Allow symbol character"> <label>Include symbols</label> <br>
+
+                <input type="button" value="Generate Password" id="genBtn">
+            </fieldset>
+        </form>
+
+    </div>
+    
+    <!-- JavaScript -->
+    <script src="./script.js" defer></script>
+</body>
+</html>

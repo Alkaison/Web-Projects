@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: 0.8px;
+    color: white;
+    background-color: #CA0949;
+}
+
+.container {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #072A3A; 
+}
+fieldset {
+    padding: 10px;
+    border-radius: 6px;
+}
+#legend-title {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    padding: 4px;
+}
+#password-title {
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    margin-bottom: 6px;
+}
+#password-title:hover {
+    color: #CA0949;
+}
+#passwordInput {
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    padding: 6px;
+    padding-right: 32px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    background-color: #041923;
+    border: transparent;
+    outline: transparent;
+    overflow: hidden;
+}
+#length {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.inputField {
+    position: relative;
+}
+#passLengthText {
+    font-size: 20px;
+}
+#passLengthInput {
+    display: inline-block;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+#svgClipboard {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+#paramters {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+input[type="checkbox"] + label {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+#genBtn {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    padding: 8px 16px;
+    margin: 8px 0;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #3B445C;
+    outline: transparent;
+    border: 2px solid transparent;
+}
+#genBtn:hover {
+    color: #CA0949;
+    background-color: white;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        width: 300px;
+    }
+    #legend-title {
+        font-size: 24px;
+    }
+}
