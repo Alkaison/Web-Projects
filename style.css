@@ -36,14 +36,6 @@ html {
     border: 1px solid black;
     cursor: pointer;
 }
-#profilePic:hover {
-    box-shadow: #000 1px 1px, #000 2px 2px;
-    transform: translate3d(-2px, -2px, 0);
-}
-#profilePic:active {
-    box-shadow: #FFFFFF 0 0;
-    transform: translate3d(0, 0, 0);
-}
 #nameTitle {
     font-size: 20px;
     cursor: pointer;
