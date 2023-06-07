@@ -38,7 +38,7 @@ function getProjects()
 
                 const pDescription = projectCard.querySelector(".project-description");
                 const description = project.description;
-                const limitedText = description.substring(0, 100) + (description.length > 100 ? '...' : '');
+                const limitedText = description.substring(0, 110) + (description.length > 110 ? '...' : '');
                 pDescription.textContent =  limitedText;
 
                 const pLink = projectCard.querySelector("a");
