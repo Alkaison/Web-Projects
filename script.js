@@ -36,14 +36,22 @@ function getProjects()
                 const pName = projectCard.querySelector(".project-title");
                 pName.textContent = project.name;
 
+                const pDescription = projectCard.querySelector(".project-description");
+                const description = project.description;
+                const limitedText = description.substring(0, 100) + (description.length > 100 ? '...' : '');
+                pDescription.textContent =  limitedText;
+
                 const pLink = projectCard.querySelector("a");
                 pLink.href = project.link;
 
                 const pImage = projectCard.querySelector(".project-image");
                 pImage.src = project.image;
 
-                projectContainer.append(projectCard);
+                const pLevel = projectCard.querySelector(".project-difficulty");
+                pLevel.textContent = project.level;
 
+                projectContainer.append(projectCard);
+                console.log(projectCard);
             });
         })
         .catch(error => console.log(`Additional information about error: ${error}`));
