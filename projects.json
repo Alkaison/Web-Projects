@@ -2,51 +2,61 @@
     "projects": [
         {
             "name": "Password Generator",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Password%20Generator/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Stop Watch",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Stop%20Watch/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Dad Jokes",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Dad%20Jokes/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Color Picker",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Color%20Picker/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Hidden Search Widget",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Hidden%20Search%20Widget/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Temperature Converter",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Temperature%20Converter/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Number Guessing Game",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Number%20Guessing%20Game/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Accoridan",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Accoridan/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Expanding Cards",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Expanding%20Cards/index.html",
             "image": "./TicTacToe-2.png"
         },
         {
             "name": "Counter",
+            "description": "",
             "link": "https://alkaison.github.io/Web-Projects/Counter/index.html",
             "image": "./TicTacToe-2.png"
         }
