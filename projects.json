@@ -4,70 +4,70 @@
             "name": "Password Generator",
             "description": "A simple tool that generates random and secure passwords to enhance online security.",
             "link": "https://alkaison.github.io/Web-Projects/Password%20Generator/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/passwordGenerator.png",
             "level": "Medium"
         },
         {
             "name": "Accoridan",
             "description": "A user-friendly component that organizes content into collapsible sections, allowing users to expand or collapse sections of information, improving readability and navigation on web pages.",
             "link": "https://alkaison.github.io/Web-Projects/Accoridan/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/accordian.png",
             "level": "Medium"
         },
         {
             "name": "Temperature Converter",
             "description": "A practical utility that effortlessly converts temperatures between Celsius, and Fahrenheit making it easy to switch between different temperature scales for various applications.",
             "link": "https://alkaison.github.io/Web-Projects/Temperature%20Converter/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/temperatureConverter.png",
             "level": "Medium"
         },
         {
             "name": "Dad Jokes",
             "description": "A collection of hilarious and corny jokes to entertain and provoke laughter, perfect for sharing with your family and friends.",
             "link": "https://alkaison.github.io/Web-Projects/Dad%20Jokes/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/dadJokes.png",
             "level": "Medium"
         },
         {
             "name": "Color Picker",
             "description": "A convenient tool for selecting and copying precise colors by providing accurate color choices in web design and graphics.",
             "link": "https://alkaison.github.io/Web-Projects/Color%20Picker/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/colorPicker.png",
             "level": "Easy"
         },
         {
             "name": "Hidden Search Widget",
             "description": "An interactive search widget that remains hidden until triggered, providing a sleek and modern way to access search functionality on a website or application.",
             "link": "https://alkaison.github.io/Web-Projects/Hidden%20Search%20Widget/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/hiddenSearchWidget.png",
             "level": "Easy"
         },
         {
             "name": "Stop Watch",
             "description": "A digital stopwatch that accurately measures and displays elapsed time with start, stop, and reset functionality.",
             "link": "https://alkaison.github.io/Web-Projects/Stop%20Watch/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/stopWatch.png",
             "level": "Easy"
         },
         {
             "name": "Number Guessing Game",
             "description": "A fun and interactive game where players attempt to guess a randomly generated number within a specified range, testing their intuition and numerical skills.",
             "link": "https://alkaison.github.io/Web-Projects/Number%20Guessing%20Game/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/guessTheNumber.png",
             "level": "Easy"
         },
         {
             "name": "Expanding Cards",
             "description": "Engaging and interactive cards that expand when clicked, revealing additional content creating an engaging user experience for showcasing information or images.",
             "link": "https://alkaison.github.io/Web-Projects/Expanding%20Cards/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/expandingCards.png",
             "level": "Easy"
         },
         {
             "name": "Counter",
             "description": "A minimalistic counter that increments or decrements a numerical value with basic controls, providing a straightforward way to track and display counts or quantities.",
             "link": "https://alkaison.github.io/Web-Projects/Counter/index.html",
-            "image": "./TicTacToe-2.png",
+            "image": "./images/projects/counter.png",
             "level": "Easy"
         }
     ]
