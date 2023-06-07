@@ -141,6 +141,7 @@ html {
 .project-title {
     display: inline-block;
     padding-left: 12px;
+    white-space: nowrap;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.8px;
@@ -155,7 +156,7 @@ html {
     background-image: linear-gradient(90deg, #a106f4, #e707fa);
 }
 .project-description {
-    padding: 0 4px 6px 12px;
+    padding: 0 6px 6px 12px;
     line-height: 1.4rem;
     letter-spacing: 0.8px;
     word-break: keep-all;
