@@ -115,9 +115,9 @@ html {
 .projects-container {
     display: grid;
     place-items: center;
-    padding: 32px;
+    padding: 32px 175px;
     grid-template-columns: auto auto auto;
-    gap: 32px;
+    gap: 40px;
 }
 /* project cards css */
 .project-card {
@@ -136,18 +136,59 @@ html {
     height: 325px;
     border-radius: 4px;
     overflow: hidden;
+    border-bottom: 1px solid black;
 }
 .project-title {
+    display: inline-block;
     padding-left: 12px;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0.8px;
-    border-bottom: 1px solid black;
+    background-image: linear-gradient(240deg, #a106f4, #e707fa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-color 0.4s ease-in-out, transform 0.14s ease-in-out;
+}
+.project-title:hover {
+    transform: scale(1.03);
+    background-image: linear-gradient(90deg, #a106f4, #e707fa);
+}
+.project-description {
+    padding: 0 4px 6px 12px;
+    line-height: 1.4rem;
+    letter-spacing: 0.8px;
+    word-break: keep-all;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 15px;
 }
 .tags {
     display: flex;
     justify-content: space-between;
     padding: 0 12px;
+    border-top: 1px solid black;
+}
+.tags .project-difficulty:hover {
+    font-weight: bold;
+    background-image: linear-gradient(240deg, #40c9ff, #e81cff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tags .project-link:hover {
+    background-image: linear-gradient(#333399, #FF00CC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: letsGo .5s ease-in-out infinite alternate;
+}
+@keyframes letsGo {
+    50% {
+        transform: translateX(-8px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 /* Footer CSS */
