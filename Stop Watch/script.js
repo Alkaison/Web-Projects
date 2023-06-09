@@ -18,6 +18,7 @@ startBtn.addEventListener("click", () => {
 pauseBtn.addEventListener("click", () => {
     clearInterval(interval);
     startBtn.disabled = false;
+    startBtn.style.cursor = "pointer";
 });
 
 // stop timer, reset variables and enable start-button 
@@ -27,6 +28,7 @@ resetBtn.addEventListener("click", () => {
     min = "00";
     hrs = "00";
     startBtn.disabled = false;
+    startBtn.style.cursor = "pointer";
     timeText.textContent = `${hrs} : ${min} : ${sec}`;
 });
 
