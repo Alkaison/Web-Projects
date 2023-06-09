@@ -54,7 +54,7 @@ html {
     border-radius: 50px;
     font-size: 16px;
     background-color: #fff;
-    background-image: url('https://i.ibb.co/brZY81x/search-Icon.png');
+    background-image: url('./images/search-Icon.png');
     background-size: 32px;
     background-position: 8px center;
     background-repeat: no-repeat;
