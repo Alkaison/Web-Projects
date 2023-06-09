@@ -51,7 +51,6 @@ function getProjects()
                 pLevel.textContent = project.level;
 
                 projectContainer.append(projectCard);
-                console.log(projectCard);
             });
         })
         .catch(error => console.log(`Additional information about error: ${error}`));
