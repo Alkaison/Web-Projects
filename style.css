@@ -115,7 +115,7 @@ html {
 .projects-container {
     display: grid;
     place-items: center;
-    padding: 32px 175px;
+    padding: 32px 10vw;
     grid-template-columns: auto auto auto;
     gap: 40px;
 }
@@ -189,6 +189,33 @@ html {
     }
     100% {
         transform: translateX(0);
+    }
+}
+/* Project Cards - Responsive */
+@media screen and (max-width: 1370px) {
+    .projects-container {
+        padding: 32px 5vw;
+        gap: 25px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .projects-container {
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .projects-container {
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .projects-container {
+        padding: 32px 10px;
+    }
+    .project-card {
+        width: 280px;
     }
 }
 
