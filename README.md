@@ -23,7 +23,8 @@ Welcome to the Web Projects repository! This repository contains a collection of
 | 8. | [Dad Jokes](./Dad%20Jokes/index.html "Dad Jokes") | [Link](https://alkaison.github.io/Web-Projects/Dad%20Jokes/index.html) |
 | 9. | [Stop Watch](./Stop%20Watch/index.html "Stop Watch") | [Link](https://alkaison.github.io/Web-Projects/Stop%20Watch/index.html) |
 | 10. | [Password Generator](./Password%20Generator/index.html "Password Generator") | [Link](https://alkaison.github.io/Web-Projects/Password%20Generator/index.html "Password Generator") |
-| 11. | [Kali Linux Terminal (In-Progress)](#) | [Link](#) |
+| 11. | [Calculator](./Calculator/index.html) | [Link](https://alkaison.github.io/Web-Projects/Calculator/index.html "Calculator") |
+| 12. | [Kali Linux Terminal (In-Progress)](#) | [Link](#) |
 
 ## Getting Started
 

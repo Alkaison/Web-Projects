@@ -1,6 +1,13 @@
 {
     "projects": [
         {
+            "name": "Calculator",
+            "description": "A versatile tool for performing basic to complex mathematical calculations, including addition, subtraction, multiplication, division, and more, facilitating quick and accurate computations.",
+            "link": "./Calculator/index.html",
+            "image": "./images/projects/Calculator.png",
+            "level": "Medium"
+        },
+        {
             "name": "Password Generator",
             "description": "A simple tool that generates random and secure passwords to enhance online security.",
             "link": "./Password%20Generator/index.html",
