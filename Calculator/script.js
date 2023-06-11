@@ -5,6 +5,7 @@ const btnContainer = document.querySelector(".btn-container");
 
 let result = '';
 let resultShown = false;
+let lastOperatorIndex = 0;
 
 // check which button is clicked by user 
 const validateInput = event =>
@@ -95,14 +96,14 @@ const updateDisplay = keyValue => {
     const operatorResult = formatOperator(keyValue);
 
     // Append the result if it's not undefined 
-    if (operatorResult !== undefined)
+    if (operatorResult !== undefined && operatorResult !== null && preventDoubleDecimalPoints(keyValue))
         userInputText.textContent += operatorResult; 
 }
 
-// if same operator is clicked twice, prevent it on screen 
+// if operator is switched then change it 
 const formatOperator = userChar => {
     const lastChar = userInputText.textContent.charAt(userInputText.textContent.length - 1);
-    const operators = ['+', '-', '*', '/', '%', '.'];
+    const operators = ['+', '-', '*', '/', '%'];
 
     if (
         lastChar !== '' &&
@@ -113,6 +114,52 @@ const formatOperator = userChar => {
     }
 
     return userChar;
+}
+
+// if double decimal points are entered before a operator prevent it 
+const preventDoubleDecimalPoints = (keyValue) => {
+
+    const operators = ['+', '-', '*', '/', '%', '.'];
+    const userInput = userInputText.textContent + keyValue;
+    const newInput = userInput.slice(lastOperatorIndex);
+    
+    // Find double decimal points and prevent it 
+    for (let i = 0; i < newInput.length; i++)
+    {
+        if(newInput.charAt(0) === '.' && newInput.lastIndexOf('.') !== 0)
+        {
+            return false;
+        }
+    }
+    
+    // Find the last operator index 
+    for (let i = userInput.length - 1; i >= 0; i--) 
+    {
+        if (operators.includes(userInput[i]))
+        {
+            lastOperatorIndex = i;
+            break;
+        }
+    }
+
+    // replace zero at first position with the next number 
+    if(newInput.charAt(1) === '0' && operators.includes(newInput[0]))
+    {
+        if(newInput.charAt(2) !== '' && newInput.charAt(2) !== '.')
+        {
+            const updatedText = userInput.substring(0, lastOperatorIndex + 1) + keyValue;
+            userInputText.textContent = updatedText;
+            return false;
+        }
+    }
+    else if(userInput.charAt(0) === '0')
+    {
+        userInputText.textContent = '';
+        userInputText.textContent = keyValue;
+        return false;
+    }
+
+    return true;
 }
 
 // event listener for button clicks 
