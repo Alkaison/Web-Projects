@@ -1,12 +1,12 @@
-// Open main page on click over pageTitle 
 const navTitle = document.querySelector(".navTitle");
+const searchBar = document.querySelector("#searchProjects");
+const projectCardContainer = document.querySelector(".project-card");
+const projectContainer = document.querySelector(".projects-container");
 
+// Open main page on click over pageTitle 
 navTitle.addEventListener("click", () => {
     window.location.href = "https://alkaison.github.io/Web-Projects";
 });
-
-const projectCardContainer = document.querySelector(".project-card");
-const projectContainer = document.querySelector(".projects-container");
 
 // fetch data from projects.json 
 async function fetchData(path)
@@ -25,6 +25,7 @@ async function fetchData(path)
     }
 }
 
+// create and append projects cards on body 
 function getProjects()
 {
     fetchData("./projects.json")
@@ -54,6 +55,32 @@ function getProjects()
             });
         })
         .catch(error => console.log(`Additional information about error: ${error}`));
+
+
 }
 
+// call for listing the projects 
 getProjects();
+
+// return the list of projects matching the userInput 
+const getFilterProjects = () => {
+
+    // get value in searchBar
+    const userInput = searchBar.value.trim().toLowerCase();
+
+    // get all projects from project-container 
+    const projectCardArray = Array.from(projectContainer.querySelectorAll(".project-card"));
+
+    // modify the property of project-card 
+    projectCardArray.forEach((project) => {
+        const projectTitle = project.querySelector(".project-title").textContent;
+        
+        if(!projectTitle.toLowerCase().startsWith(userInput))
+            project.classList.add("hide");
+        else
+            project.classList.remove("hide");
+    });
+}
+
+// filter the projects as per search string 
+searchBar.addEventListener("input", getFilterProjects);

@@ -218,6 +218,10 @@ html {
         width: 280px;
     }
 }
+/* Hide Card Class */
+.hide {
+    display: none;
+}
 
 /* Footer CSS */
 .ft-container {
