@@ -222,6 +222,15 @@ html {
 .hide {
     display: none;
 }
+/* No projects message */
+.noProjectsMessage {
+    font-size: 20px;
+    padding: 4px 12px;
+    letter-spacing: 0.8px;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Footer CSS */
 .ft-container {
