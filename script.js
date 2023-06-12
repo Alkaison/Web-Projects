@@ -1,5 +1,6 @@
 const navTitle = document.querySelector(".navTitle");
 const searchBar = document.querySelector("#searchProjects");
+const noProjectMessage = document.querySelector(".noProjectsMessage");
 const projectCardContainer = document.querySelector(".project-card");
 const projectContainer = document.querySelector(".projects-container");
 
@@ -65,8 +66,8 @@ getProjects();
 // return the list of projects matching the userInput 
 const getFilterProjects = () => {
 
-    // get value in searchBar
-    const userInput = searchBar.value.trim().toLowerCase();
+    const userInput = searchBar.value.trim().toLowerCase();  // get value in searchBar
+    let hiddenProjectsCount = 0;
 
     // get all projects from project-container 
     const projectCardArray = Array.from(projectContainer.querySelectorAll(".project-card"));
@@ -76,10 +77,19 @@ const getFilterProjects = () => {
         const projectTitle = project.querySelector(".project-title").textContent;
         
         if(!projectTitle.toLowerCase().startsWith(userInput))
+        {
             project.classList.add("hide");
+            hiddenProjectsCount++;
+        }
         else
             project.classList.remove("hide");
     });
+
+    // Show the message when all projects are hidden 
+    if (hiddenProjectsCount === projectCardArray.length)
+        noProjectMessage.style.display = "flex";
+    else
+        noProjectMessage.style.display = "none";
 }
 
 // filter the projects as per search string 
