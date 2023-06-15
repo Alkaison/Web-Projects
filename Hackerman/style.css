@@ -103,16 +103,15 @@ body {
 }
 .command-input {
     width: 100%;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 .commandLine {
     display: inline-block;
-    width: fit-content;
     white-space: nowrap;
     color: green;
 }
 .commandField {
-    width: 81%;
+    width: 70%;
     font-size: 20px;
     letter-spacing: 0.8px;
     color: lightgreen;

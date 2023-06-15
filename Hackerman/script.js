@@ -1,20 +1,58 @@
 const commandInput = document.querySelector(".commandField");
 const output = document.querySelector(".output");
 const outputContainer = document.querySelector(".command-output");
-const commands = ["help", "clear"];
+const commands = ["help", "clear", "connect", "contribute"];
 
-const executeCommand = (cmd) => {
+// help cmd output 
+const showAllAvailableCmds = (messageBox) => {
+    
+    // list down all commands from array 
+    messageBox.innerHTML += " <br>Available Commands to use are: ";
+    commands.forEach((cmd) => {
+        messageBox.innerHTML += `<br> → ${cmd}`;
+    });
+
+    messageBox.innerHTML += "<br><br>» We are looking for contributors to improve this projects, are you interested? <br>» Type \'contribute\' and become a open-source buddy for Web-Projects.";
+}
+
+// clear cmd output 
+const clearTerminal = () => {
+    // erase everything from output-container 
+    outputContainer.innerHTML = '';
+}
+
+// connect cmd output 
+const openGitHubProfile = () => {
+    // open my github profile 
+    window.open("https://github.com/Alkaison");
+}
+
+// open github repo for contribution 
+const contributionLink = () => {
+    // open github repo 
+    window.open("https://github.com/Alkaison/Web-Projects/");
+}
+
+// executes functions as per command match 
+const executeCommand = (cmd, messageBox) => {
     switch(cmd)
     {
-        case 'help':
-            console.log("Help cmd");
+        case "help":
+            showAllAvailableCmds(messageBox);
             break;
-        case 'clear':
-            console.log("Clear cmd");
+        case "clear":
+            clearTerminal(messageBox);
+            break;
+        case "connect":
+            openGitHubProfile();
+            break;
+        case "contribute":
+            contributionLink();
             break;
     }
 }
 
+// validate the commands 
 commandInput.addEventListener("keydown", (e) => {
     
     // get command from input box 
@@ -26,17 +64,19 @@ commandInput.addEventListener("keydown", (e) => {
         // create new element and append it on output 
         const createElement = output.cloneNode(true);
         const outputTextMessage = createElement.querySelector(".outputText");
-
         createElement.style.display = "block";
         outputTextMessage.textContent = inputCommand;
-        outputContainer.append(createElement);
 
-        // clear the input box 
+        // append the message 
+        if(commands.includes(inputCommand))
+            executeCommand(inputCommand, outputTextMessage);
+        else
+            outputTextMessage.innerHTML += "<br>Command not found. Type \'help\' for list of available commands.";
+        
+        // clear the input box and append the element 
         commandInput.value = '';
 
-        if(commands.includes(inputCommand))
-            executeCommand(inputCommand);
-        else
-            outputTextMessage.setHTML(`<br> ${inputCommand} Command not found. Type \'help\' for list of available commands.`);
+        if(inputCommand != "clear")
+            outputContainer.append(createElement);
     }
 });
