@@ -1,18 +1,13 @@
 /* Importing Google Fonts - "Inknut Antiqua" */
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inknut Antiqua', serif;
-    background-color: #FFFFFF;
-    /* border: 1px solid red; */
-}
 html {
     scroll-behavior: smooth;
 }
-
+body {
+    font-family: 'Inknut Antiqua', serif;
+    background-color: #FFFFFF;
+}
 /* NavBar CSS */
 .navContainer {
     height: 10vh;
@@ -90,9 +85,7 @@ html {
     border: none;
     height: 1px;
     background-color: #000;
-    /* background-image: linear-gradient(to right, #fff, #ccc, #fff); */
 }
-
 /* NavBar CSS Responsive */
 @media screen and (max-width: 1200px) {
     .navContainer {
@@ -110,7 +103,6 @@ html {
         width: 75%;
     }
 }
-
 /* Body CSS */
 .projects-container {
     display: grid;
@@ -231,7 +223,6 @@ html {
     justify-content: center;
     align-items: center;
 }
-
 /* Footer CSS */
 .ft-container {
     padding: 0 128px;
@@ -246,7 +237,6 @@ html {
     font-size: 18px;
     font-weight: bolder;
 }
-
 /* Footer Responsive CSS */
 @media screen and (max-width: 1000px) {
     .ft-container {

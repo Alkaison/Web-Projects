@@ -24,13 +24,7 @@ body {
     overflow: hidden;
     color: #666;
     transition: max-height 0.2s;
-    /* Animation wont work with display property */
-    /* display: none; */
 }
-/* Animation wont work with display property */
-/* .answer.active{
-    display: block;
-} */
 .icon {
     width: 20px;
     height: 20px;

@@ -9,6 +9,8 @@ let colorCode;
 
 // look for the input changes in "range" buttons 
 rangeBtns.forEach((rangeBtn) => {
+
+    // add event listener to each element 
     rangeBtn.addEventListener("input", () => {
         updateColorDisplayed();
     });

@@ -3,19 +3,13 @@
     --background-color: #0A192F;
     --sub-text: #DDDDDD;
 }
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
-    overflow: hidden;
-}
 .container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
     background-color: var(--background-color);
 }
 .counter-card {
@@ -66,8 +60,6 @@
 .btn-plus:hover, .btn-minus:hover, .btn-reset:hover {
     box-shadow: 2px 2px 4px var(--sub-text);
 }
-
-/* Responsive */
 @media screen and (max-width: 420px) {
     .counter-card {
         padding: 16;

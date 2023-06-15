@@ -10,6 +10,7 @@ let interval = 0;
 // start timer and disable start-button 
 startBtn.addEventListener("click", () => {
     interval = setInterval(updateTime, 1000);
+    
     startBtn.disabled = true;
     startBtn.style.cursor = "not-allowed";
 });
@@ -17,6 +18,7 @@ startBtn.addEventListener("click", () => {
 // stop timer and enable start-button 
 pauseBtn.addEventListener("click", () => {
     clearInterval(interval);
+    
     startBtn.disabled = false;
     startBtn.style.cursor = "pointer";
 });
@@ -24,9 +26,11 @@ pauseBtn.addEventListener("click", () => {
 // stop timer, reset variables and enable start-button 
 resetBtn.addEventListener("click", () => {
     clearInterval(interval);
+
     sec = "00";
     min = "00";
     hrs = "00";
+
     startBtn.disabled = false;
     startBtn.style.cursor = "pointer";
     timeText.textContent = `${hrs} : ${min} : ${sec}`;
@@ -35,6 +39,7 @@ resetBtn.addEventListener("click", () => {
 // main function for time updation 
 const updateTime = () => {
 
+    // increment secs after delay 
     sec++;
 
     // format single digit value to double digits (like: 0 to 00) 
@@ -43,6 +48,7 @@ const updateTime = () => {
         return txt;
     }
 
+    // increment minutes 
     if(sec > 59)
     {
         min++;
@@ -50,6 +56,7 @@ const updateTime = () => {
         min = formatZero(min);
     }
 
+    // increment hours 
     if(min > 59)
     {
         hrs++;
@@ -58,6 +65,7 @@ const updateTime = () => {
         hrs = formatZero(hrs);
     }
 
+    // if hrs become 24 then make it 0, and format it properly 
     if(hrs > 23)
     {
         sec = 0;

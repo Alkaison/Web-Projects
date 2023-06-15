@@ -5,12 +5,16 @@ const celsiusBox = document.querySelector("#celsius");
 
 // To Fahrenheit 
 btn1.addEventListener("click", () => {
+
+    // get the value from box 
     const celsius = Number.parseInt(celsiusBox.value);
     let fahrenheit = 0;
 
+    // check for the condition and update the results 
     if (celsius === '' || isNaN(celsius) || typeof celsius === 'undefined' || !Number.isInteger(Number(celsius)))
         celsiusBox.style.border = "2px solid red";
-    else {
+    else 
+    {
         celsiusBox.style.border = "2px solid gray";
         fahrenheit = (celsius * 1.8) + 32;
         fahrenheitBox.value = fahrenheit.toFixed(2) + "°F";
@@ -19,12 +23,16 @@ btn1.addEventListener("click", () => {
 
 // To Celsius 
 btn2.addEventListener("click", () => {
+
+    // get the value from box 
     const fahrenheit = Number.parseInt(fahrenheitBox.value);
     let celsius = 0;
 
+    // check for the condition and update the results 
     if (fahrenheit === '' || isNaN(fahrenheit) || typeof fahrenheit === 'undefined' || !Number.isInteger(Number(fahrenheit)))
         fahrenheitBox.style.border = "2px solid red";
-    else {
+    else 
+    {
         fahrenheitBox.style.border = "2px solid gray";
         celsius = (fahrenheit - 32) / 1.8;
         celsiusBox.value = celsius.toFixed(2) + "°C";
