@@ -24,7 +24,7 @@ Welcome to the Web Projects repository! This repository contains a collection of
 | 9. | [Stop Watch](./Stop%20Watch/index.html "Stop Watch") | [Link](https://alkaison.github.io/Web-Projects/Stop%20Watch/index.html) |
 | 10. | [Password Generator](./Password%20Generator/index.html "Password Generator") | [Link](https://alkaison.github.io/Web-Projects/Password%20Generator/index.html "Password Generator") |
 | 11. | [Calculator](./Calculator/index.html) | [Link](https://alkaison.github.io/Web-Projects/Calculator/index.html "Calculator") |
-| 12. | [Kali Linux Terminal (In-Progress)](#) | [Link](#) |
+| 12. | [Linux Terminal](./Hackerman/index.html) | [Link](https://alkaison.github.io/Web-Projects/Hackerman/index.html) |
 
 ## Getting Started
 
