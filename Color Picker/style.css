@@ -1,16 +1,10 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS', sans-serif;
-    /* border: 1px solid red; */
-}
 body {
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Trebuchet MS', sans-serif;
     background-color: lightgreen;
 }
 .container {

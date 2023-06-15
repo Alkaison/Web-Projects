@@ -9,9 +9,11 @@ const showAllAvailableCmds = (messageBox) => {
     // list down all commands from array 
     messageBox.innerHTML += " <br>Available Commands to use are: ";
     commands.forEach((cmd) => {
+        // add the cmds 
         messageBox.innerHTML += `<br> → ${cmd}`;
     });
 
+    // ask for collabration 
     messageBox.innerHTML += "<br><br>» We are looking for contributors to improve this projects, are you interested? <br>» Type \'contribute\' and become a open-source buddy for Web-Projects.";
 }
 

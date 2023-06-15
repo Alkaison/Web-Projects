@@ -4,6 +4,8 @@ const input = document.querySelector('.input');
 
 // check for "click" event and toggle active class 
 btn.addEventListener('click', () => {
+
+    // add active class and focus the search box 
     search.classList.toggle('active');
     input.focus();
 });

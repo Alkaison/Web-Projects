@@ -1,14 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: cursive;
-}
 body {
     height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    font-family: cursive;
     align-items: center;
     background-color: #1D2A35;
 }
